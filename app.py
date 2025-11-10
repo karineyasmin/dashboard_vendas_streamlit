@@ -17,7 +17,6 @@ st.title("Dashboard de Vendas :shopping_cart:")
 
 st.sidebar.title("Filtro de Vendedores")
 filtro_vendedor = st.sidebar.multiselect("Vendedores", df["Vendedor"].unique())
-
 if filtro_vendedor:
     df = df[df["Vendedor"].isin(filtro_vendedor)]
 
